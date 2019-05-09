@@ -157,7 +157,7 @@ client.on("message", async message => {
       // Set the color of the embed
       .setColor(0xFF0000)
       // Set the main content of the embed
-      .setDescription('e!ping, show the current connection status. \n e!say, takes your text and sends it as ExoBot. \n e!kick, Kicks a User (only usable as Administrator or Moderator). \n e!ban, Bans a User (only usable as Administrator or Moderator). \n e!purge, X deletes all the lines before. X stays for 1 to 100 lines. \n e!hello try it :) \n e!time shows you the time. \n e!rip \n e!avatar \n');
+      .setDescription('e!ping,        show the current connection status. \n e!say,        takes your text and sends it as ExoBot. \n e!kick,        Kicks a User (only usable as Administrator or Moderator). \n e!ban,        Bans a User (only usable as Administrator or Moderator). \n e!purge,        X deletes all the lines before. X stays for 1 to 100 lines. \n        e!hello try it :) \n        e!time shows you the time. \n        e!rip \n        e!avatar \n');
        message.channel.send(embed);
 	  
   }
