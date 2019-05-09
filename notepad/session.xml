@@ -1,0 +1,24 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="7">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1096" startPos="2688" endPos="2691" selMode="0" lang="JavaScript" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\ExoBot\bot.js" backupFilePath="C:\Users\Teilnehmer\Downloads\ExoBot\notepad\backup\bot.js@2019-05-09_123027" originalFileLastModifTimestamp="383964886" originalFileLastModifTimestampHigh="30738002" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Fold line="14" />
+                <Fold line="22" />
+                <Fold line="28" />
+                <Fold line="95" />
+                <Fold line="100" />
+                <Fold line="104" />
+                <Fold line="118" />
+                <Fold line="145" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="584" startPos="74" endPos="15" selMode="0" lang="JSON" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\ExoBot\auth.json" backupFilePath="" originalFileLastModifTimestamp="1582398624" originalFileLastModifTimestampHigh="30737989" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1139802112" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="408" startPos="108" endPos="106" selMode="0" lang="JSON" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\ExoBot\package.json" backupFilePath="" originalFileLastModifTimestamp="-1866961597" originalFileLastModifTimestampHigh="30738003" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1139802112" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="456" startPos="43" endPos="43" selMode="0" lang="JSON" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\Episode 14\package.json" backupFilePath="" originalFileLastModifTimestamp="2134425564" originalFileLastModifTimestampHigh="30738006" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1139802112" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="600" startPos="76" endPos="76" selMode="0" lang="JSON" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\Episode 14\token.json" backupFilePath="" originalFileLastModifTimestamp="-1855981162" originalFileLastModifTimestampHigh="30738005" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1139802112" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="240" startPos="17" endPos="17" selMode="0" lang="JSON" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\Episode 14\config.json" backupFilePath="" originalFileLastModifTimestamp="643149774" originalFileLastModifTimestampHigh="30738005" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1139802112" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="352" startPos="0" endPos="0" selMode="0" lang="JavaScript" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\Episode 14\index.js" backupFilePath="" originalFileLastModifTimestamp="-370837158" originalFileLastModifTimestampHigh="30738004" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1139802112" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="520" startPos="65" endPos="65" selMode="0" lang="Normal Text" encoding="-1" userReadOnly="no" filename="C:\Users\Teilnehmer\Downloads\bot development" backupFilePath="" originalFileLastModifTimestamp="-1429571405" originalFileLastModifTimestampHigh="30738007" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

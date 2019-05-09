@@ -1,0 +1,8 @@
+{
+"name": "ExoBot",
+"version": "1.0.0",
+"description": "ExoBot der Diener von OrionExodus",
+"main": "bot.js",
+"author": "OrionExodus",
+"dependencies": {}
+}
