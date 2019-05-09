@@ -161,12 +161,7 @@ client.on("message", async message => {
        message.channel.send(embed);
 	  
   }
-  client.on('message', msg => {
-  if (msg.channel.type == "dm") {
-    msg.author.send("Sorry I can't really answer to any questions in private, I'm solely OrionExodus servant!");
-    return;
-  }
-});
+
 });
 
 client.login(process.env.token);
