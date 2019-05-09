@@ -1,9 +1,9 @@
 
 # ExoBot
 
-A General Purpose Discord Bot written in DotNet Core.
+A generic Discord Bot written in Javascript.
 
-You can invite Geekbot to your server with [this link](https://discordapp.com/oauth2/authorize?client_id=575619901310369803&scope=bot&permissions=1416834054)
+You can invite ExoBot to your server with [this link](https://discordapp.com/oauth2/authorize?client_id=575619901310369803&scope=bot&permissions=1416834054)
 
 ## Technologies
 
