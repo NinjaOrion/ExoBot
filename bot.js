@@ -152,6 +152,7 @@ client.on("message", async message => {
   }
   
   if(command === "help") {
+	  const embed = new Discord.RichEmbed()
 	  .setTitle('Help')
       // Set the color of the embed
       .setColor(0xFF0000)
