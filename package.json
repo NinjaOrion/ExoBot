@@ -4,5 +4,5 @@
 "description": "ExoBot der Diener von OrionExodus",
 "main": "bot.js",
 "author": "OrionExodus",
-"dependencies": {}
+"dependencies": { "discord.js": "^11.4.2" }
 }
