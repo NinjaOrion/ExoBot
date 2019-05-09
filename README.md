@@ -1,5 +1,5 @@
 
-# [ExoBot]
+# ExoBot
 
 A General Purpose Discord Bot written in DotNet Core.
 
