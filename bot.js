@@ -174,7 +174,9 @@ if(command === "say") {
   }
 client.on('message', msg => {
   if (msg.channel.type == "dm") {
-    msg.author.send("I am OrionExodus#1636 Servant, pls don't DM me!");
+    msg.author.send("I am OrionExodus#1636 Servant, pls don't DM me!")
+	.then(message => console.log(`Sent message: ${message.content}`))
+	.catch(console.error);
     return;
   }
 });
