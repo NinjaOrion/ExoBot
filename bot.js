@@ -147,13 +147,14 @@ client.on("message", async message => {
 	   await delay(5000);
 	   message.channel.send("SPIT ON HIM BROTHAS! SPIT ON HIM!");
   }
-  if(command === "time") {
-     var toLocalTime = function(time) {
+  var toLocalTime = function(time) {
 		var d = new Date(time);
 		var offset = (new Date().getTimezoneOffset() / 60) * -1;
 		var n = new Date(d.getTime() + offset);
 		return n;
 	};
+  if(command === "time") {
+     
      message.channel.send(toLocalTime);
   }
   
