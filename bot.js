@@ -57,11 +57,14 @@ client.on("message", async message => {
         // Send the attachment in the message channel
         message.channel.send(attachment);
   }
-  if(command === "avatar") {
+  if(command === "ava") {
 
         message.channel.send(message.author.avatarURL);
   }
-  
+   if(command === "avainv") {
+
+        message.channel.send(message.author.avatarURL.style.filter="invert(100%)");
+  }
   
   if(command === "embed") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
