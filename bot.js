@@ -62,9 +62,9 @@ client.on("message", async message => {
         message.channel.send(message.author.avatarURL);
   }
    if(command === "avainv") {
-	   var styleEl = document.createElement('style');
-styleEl.innerHTML = ".img {-webkit-filter:invert(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');}"
-document.head.appendChild(styleEl);
+	  // var styleEl = document.createElement('style');
+//styleEl.innerHTML = ".img {-webkit-filter:invert(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');}"
+//document.head.appendChild(styleEl);
 	
         message.channel.send(message.author.avatarURL);
   }
