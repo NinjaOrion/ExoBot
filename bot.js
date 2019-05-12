@@ -148,7 +148,13 @@ client.on("message", async message => {
 	   message.channel.send("SPIT ON HIM BROTHAS! SPIT ON HIM!");
   }
   if(command === "time") {
-     message.channel.send(new Date(new Date().getTime()).toLocaleTimeString());
+     var toLocalTime = function(time) {
+		var d = new Date(time);
+		var offset = (new Date().getTimezoneOffset() / 60) * -1;
+		var n = new Date(d.getTime() + offset);
+		return n;
+	};
+     message.channel.send(toLocalTime);
   }
   
   if(command === "help") {
@@ -161,7 +167,15 @@ client.on("message", async message => {
        message.channel.send(embed);
 	  
   }
-
+if(command === "say") {
+    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    message.delete().catch(O_o=>{}); 
+    // And we get the bot to say the thing: 
+    message.channel.send(sayMessage);
+  }
 });
 
 client.login(process.env.token);
