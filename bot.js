@@ -172,7 +172,7 @@ if(command === "say") {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
-client.on('message', msg => {
+client.on('message', async message => {
   if (msg.channel.type == "dm") {
     msg.author.send("I am OrionExodus#1636 Servant, pls don't DM me!");
     return;
