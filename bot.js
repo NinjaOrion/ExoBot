@@ -62,8 +62,11 @@ client.on("message", async message => {
         message.channel.send(message.author.avatarURL);
   }
    if(command === "avainv") {
-
-        message.channel.send(message.author.avatarURL.style.filter="invert(100%)");
+.img {
+    -webkit-filter:invert(100%);
+     filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+}
+        message.channel.send(message.author.avatarURL);
   }
   
   if(command === "embed") {
