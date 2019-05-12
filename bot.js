@@ -146,18 +146,7 @@ client.on("message", async message => {
        message.channel.send("Hello Brudda, Are you a believa?");
 	   await delay(5000);
 	   message.channel.send("SPIT ON HIM BROTHAS! SPIT ON HIM!");
-  }
-  var toLocalTime = function(time) {
-		var d = new Date(time);
-		var offset = (new Date().getTimezoneOffset() / 60) * -1;
-		var n = new Date(d.getTime() + offset);
-		return n;
-	};
-  if(command === "time") {
-     
-     message.channel.send(toLocalTime);
-  }
-  
+  } 
   if(command === "help") {
 	  const embed = new Discord.RichEmbed()
 	  .setTitle('Help')
