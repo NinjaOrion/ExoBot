@@ -1,6 +1,6 @@
 // Load up the discord.js library
 const Discord = require("discord.js");
-const superagent = require("superagent");
+//const superagent = require("superagent");
 // This is your client. Some people call it `bot`, some people call it `self`, 
 // some might call it `cootchie`. Either way, when you see `client.something`, or `bot.something`,
 // this is what we're refering to. Your client.
