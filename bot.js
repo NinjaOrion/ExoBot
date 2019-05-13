@@ -1,6 +1,6 @@
 // Load up the discord.js library
 const Discord = require("discord.js");
-//const superagent = require("superagent");
+
 // This is your client. Some people call it `bot`, some people call it `self`, 
 // some might call it `cootchie`. Either way, when you see `client.something`, or `bot.something`,
 // this is what we're refering to. Your client.
@@ -61,7 +61,7 @@ client.on("message", async message => {
 
         message.channel.send(message.author.avatarURL);
   }
-   if(command === "cat") {
+   /*if(command === "cat") {
 	  // var styleEl = document.createElement('style');
 //styleEl.innerHTML = ".img {-webkit-filter:invert(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');}"
 //document.head.appendChild(styleEl);
@@ -82,7 +82,7 @@ client.on("message", async message => {
 	   message.channel.send({embed: cEmbed})
 	   
 	   msg.delete();
-  }
+  }*/
   
   if(command === "embed") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
