@@ -65,9 +65,9 @@ client.on("message", async message => {
 	  // var styleEl = document.createElement('style');
 //styleEl.innerHTML = ".img {-webkit-filter:invert(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');}"
 //document.head.appendChild(styleEl);
-	   let msg - await message.channel.send("Generating...")
+	   let msg = await message.channel.send("Generating...")
 		
-	   let {body} - await superagent
+	   let {body} = await superagent
 		.get('http://aws.random.cat/meow')
 	   	console.log(body.file)
 	   if(!{body}) return message.channel.send("I broke! Try again.")
