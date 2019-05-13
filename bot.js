@@ -61,12 +61,27 @@ client.on("message", async message => {
 
         message.channel.send(message.author.avatarURL);
   }
-   if(command === "avainv") {
+   if(command === "cat") {
 	  // var styleEl = document.createElement('style');
 //styleEl.innerHTML = ".img {-webkit-filter:invert(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');}"
 //document.head.appendChild(styleEl);
-	
-        message.channel.send(message.author.avatarURL);
+	   let msg - await message.channel.send("Generating...")
+		
+	   let {body} - await superagent
+		.get('http://aws.random.cat/meow')
+	   	console.log(body.file)
+	   if(!{body}) return message.channel.send("I broke! Try again.")
+	   
+	   let cEmbed = new Discord.RichEmbed()
+	   .setColor(Colours.cyan)
+	   .setAuthor('TestBot CATS!', message.guild.iconURL)
+	   .setImage(body.file)
+	   .setTimestamp()
+	   .setFooter('Test Bot', bot.user.displayAvatarURL)
+	   
+	   message.channel.send({embed: cEmbed})
+	   
+	   msg.delete();
   }
   
   if(command === "embed") {
