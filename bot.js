@@ -85,7 +85,7 @@ client.on("message", async message => {
   }*/
   
   if(command === "kick") {
-    // This command must be limited to mods and admins. In this example we just hardcode the role names.
+    // This command must be limited to mods and admins.
     // Please read on Array.some() to understand this bit: 
     // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some?
     if(!message.member.hasPermission('KICK_MEMBERS') )
@@ -113,8 +113,7 @@ client.on("message", async message => {
   }
   
   if(command === "ban") {
-    // Most of this command is identical to kick, except that here we'll only let admins do it.
-    // In the real world mods could ban too, but this is just an example, right? ;)
+    // Most of this command is identical to kick, except that the permission is another.
     if(!message.member.hasPermission('BAN_MEMBERS') )
       return message.reply("Sorry, you don't have permissions to use this!");
     
@@ -138,11 +137,11 @@ client.on("message", async message => {
       return message.reply("Sorry, you don't have permissions to use this!");
     const deleteCount = parseInt(args[0], 10);
     
-    // Ooooh nice, combined conditions. <3
+    
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
       return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
     
-    // So we get our messages, and delete them. Simple enough, right?
+    // So we get our messages, and delete them.
     const fetched = await message.channel.fetchMessages({limit: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
@@ -152,16 +151,17 @@ client.on("message", async message => {
        message.channel.send("Hello Brudda")
 	   
   } 
+	
+//This is a help page shown by the bot.	
   if(command === "help") {
 	  const embed = new Discord.RichEmbed()
 	  .setTitle('Help')
-      // Set the color of the embed
       .setColor(0xFF0000)
-      // Set the main content of the embed
       .setDescription('e!ping,        show the current connection status. \n e!say,        takes your text and sends it as ExoBot. \n e!kick,        Kicks a User (only usable as Administrator or Moderator). \n e!ban,        Bans a User (only usable as Administrator or Moderator). \n e!purge,        X deletes all the lines before. X stays for 1 to 100 lines. \n        e!hello try it :) \n        e!time shows you the time. \n        e!rip \n        e!avatar \n');
        message.channel.send(embed);
 	  
   }
+	
 if(command === "say") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
@@ -171,6 +171,8 @@ if(command === "say") {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
+	
+//The Bot answers in a direct message.	
 client.on('message', msg => {
   if (msg.channel.type == "dm") {
     msg.author.send("I am OrionExodus#1636 Servant, pls don't DM me!")
