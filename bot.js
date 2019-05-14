@@ -149,21 +149,7 @@ client.on("message", async message => {
   }
   if(command === "hello") {
 	  const delay = ms => new Promise(res => setTimeout(res, ms));
-       message.channel.send("Hello Brudda, Are you a believa?");
-	  var yesanswer = ['yes', 'Ja','ja','Yes'];
-	  for (var i = 0; i < yesanswer.length; i++) {
-  		if (message.content.includes(yesanswer[i])) {
-    		message.channel.send("Oh, show me da wae brotha!");
-    		break;
-  		}
-	}
-	   var noanswer = ['no', 'nein','No','Nein'];
-	  for (var i = 0; i < noanswer.length; i++) {
-  		if (message.content.includes(yesanswer[i])) {
-    		message.channel.send("SPIT ON HIM BROTHAS! SPIT ON HIM!");
-    		break;
-  		}
-	}
+       message.channel.send("Hello Brudda")
 	   
   } 
   if(command === "help") {
