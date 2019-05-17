@@ -6,7 +6,7 @@ const Discord = require("discord.js");
 // this is what we're refering to. Your client.
 const client = new Discord.Client();
 
-// Here we load the config.json file that contains our token and our prefix values. 
+// Here we load the config.json file that contains our token and our prefix values. (Mine is hosted with heroku so i commented this line)
 //const config = require("./auth.json");
 // config.token contains the bot's token
 // config.prefix contains the message prefix.
@@ -61,34 +61,34 @@ client.on("message", async message => {
 
         message.channel.send(message.author.avatarURL);
   }
-   if(command === "avainv") {
+   /*if(command === "cat") {
 	  // var styleEl = document.createElement('style');
 //styleEl.innerHTML = ".img {-webkit-filter:invert(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');}"
 //document.head.appendChild(styleEl);
-	
-        message.channel.send(message.author.avatarURL);
-  }
-  
-  if(command === "embed") {
-    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-    // To get the "message" itself we join the `args` back into a string with spaces: 
-    const embed = new Discord.RichEmbed()
-      // Set the title of the field
-      .setTitle('A slick little embed')
-      // Set the color of the embed
-      .setColor(0xFF0000)
-      // Set the main content of the embed
-      .setDescription('Hello, this is a slick embed!');
-    // Send the embed to the same channel as the message
-    message.channel.send(embed); 
-    
-  }
+	   let msg = await message.channel.send("Generating...")
+		
+	   let {body} = await superagent
+		.get('http://aws.random.cat/meow')
+	   	console.log(body.file)
+	   if(!{body}) return message.channel.send("I broke! Try again.")
+	   
+	   let cEmbed = new Discord.RichEmbed()
+	   .setColor(Colours.cyan)
+	   .setAuthor('TestBot CATS!', message.guild.iconURL)
+	   .setImage(body.file)
+	   .setTimestamp()
+	   .setFooter('Test Bot', bot.user.displayAvatarURL)
+	   
+	   message.channel.send({embed: cEmbed})
+	   
+	   msg.delete();
+  }*/
   
   if(command === "kick") {
-    // This command must be limited to mods and admins. In this example we just hardcode the role names.
+    // This command must be limited to mods and admins.
     // Please read on Array.some() to understand this bit: 
     // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some?
-    if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
+    if(!message.member.hasPermission('KICK_MEMBERS') )
       return message.reply("Sorry, you don't have permissions to use this!");
     
     // Let's first check if we have a member and if we can kick them!
@@ -113,9 +113,8 @@ client.on("message", async message => {
   }
   
   if(command === "ban") {
-    // Most of this command is identical to kick, except that here we'll only let admins do it.
-    // In the real world mods could ban too, but this is just an example, right? ;)
-    if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
+    // Most of this command is identical to kick, except that the permission is another.
+    if(!message.member.hasPermission('BAN_MEMBERS') )
       return message.reply("Sorry, you don't have permissions to use this!");
     
     let member = message.mentions.members.first();
@@ -134,35 +133,35 @@ client.on("message", async message => {
   if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
     // get the delete count, as an actual number.
-	if(!message.member.roles.some(r=>["Pyramide Head","Administrator", "Moderator"].includes(r.name)) )
+	if(!message.member.hasPermission('MANAGE_MESSAGES')) 
       return message.reply("Sorry, you don't have permissions to use this!");
     const deleteCount = parseInt(args[0], 10);
     
-    // Ooooh nice, combined conditions. <3
+    
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
       return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
     
-    // So we get our messages, and delete them. Simple enough, right?
+    // So we get our messages, and delete them.
     const fetched = await message.channel.fetchMessages({limit: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
   if(command === "hello") {
 	  const delay = ms => new Promise(res => setTimeout(res, ms));
-       message.channel.send("Hello Brudda, Are you a believa?");
-	   await delay(5000);
-	   message.channel.send("SPIT ON HIM BROTHAS! SPIT ON HIM!");
+       message.channel.send("Hello Brudda")
+	   
   } 
+	
+//This is a help page shown by the bot.	
   if(command === "help") {
 	  const embed = new Discord.RichEmbed()
 	  .setTitle('Help')
-      // Set the color of the embed
       .setColor(0xFF0000)
-      // Set the main content of the embed
       .setDescription('e!ping,        show the current connection status. \n e!say,        takes your text and sends it as ExoBot. \n e!kick,        Kicks a User (only usable as Administrator or Moderator). \n e!ban,        Bans a User (only usable as Administrator or Moderator). \n e!purge,        X deletes all the lines before. X stays for 1 to 100 lines. \n        e!hello try it :) \n        e!time shows you the time. \n        e!rip \n        e!avatar \n');
        message.channel.send(embed);
 	  
   }
+	
 if(command === "say") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
@@ -172,6 +171,8 @@ if(command === "say") {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
+	
+//The Bot answers in a direct message.	
 client.on('message', msg => {
   if (msg.channel.type == "dm") {
     msg.author.send("I am OrionExodus#1636 Servant, pls don't DM me!")
