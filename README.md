@@ -11,7 +11,7 @@ You can invite ExoBot to your server with [this link](https://discordapp.com/oau
 
 ## Running
 
-you will need to include an auth.json file with token and prefix and change the variables. My Bot is running with Heroku.
+you will need to include an auth.json file with token and prefix and set variables. My Bot is running with Heroku.
 ```javascript
 {
 "token": "TOKEN",
