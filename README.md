@@ -4,7 +4,8 @@
 A generic Discord Bot written in Javascript.
 
 You can invite ExoBot to your server with [this link](https://discordapp.com/oauth2/authorize?client_id=575619901310369803&scope=bot&permissions=1416834054)
-type e!help for a full list of commands.
+
+type ```e!help``` for a full list of commands.
 
 ## Technologies
 
