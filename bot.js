@@ -157,7 +157,7 @@ client.on("message", async message => {
 	  const embed = new Discord.RichEmbed()
 	  .setTitle('Help')
       .setColor(0xFF0000)
-      .setDescription('e!ping,        show the current connection status. \n e!say,        takes your text and sends it as ExoBot. \n e!kick,        Kicks a User (only usable as Administrator or Moderator). \n e!ban,        Bans a User (only usable as Administrator or Moderator). \n e!purge,        X deletes all the lines before. X stays for 1 to 100 lines. \n        e!hello try it :) \n        e!time shows you the time. \n        e!rip \n        e!avatar \n');
+      .setDescription('e!ping,        show the current connection status. \n e!say,        takes your text and sends it as ExoBot. \n e!kick,        Kicks a User (only usable as Administrator or Moderator). \n e!ban,        Bans a User (only usable as Administrator or Moderator). \n e!purge,        X deletes all the lines before. X stays for 1 to 100 lines. \n        e!hello try it :) \n                e!rip \n        e!ava shows your current avatar \n');
        message.channel.send(embed);
 	  
   }
