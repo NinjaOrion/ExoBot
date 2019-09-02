@@ -178,6 +178,11 @@ if(command === "say") {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
+	  if(command === "play") {
+	  const delay = ms => new Promise(res => setTimeout(res, ms));
+       message.channel.send("This is fucked up, use Sandros command instead.")
+	   
+  }
 	
 //The Bot answers in a direct message.	
 client.on('message', msg => {
